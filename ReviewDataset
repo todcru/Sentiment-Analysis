@@ -24,3 +24,5 @@ def get_clean(x):
     x = ps.remove_special_chars(x)
     x = re.sub("(.)\\1{2,}", "\\1", x)
     return x
+
+df['Reviews'] = df['Reviews'].apply(lambda x: get_clean(x))
