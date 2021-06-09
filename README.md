@@ -1,5 +1,7 @@
 # Sentiment-Analysis
 
+This set is a collection! of movieCreview documents labeled with respect to their overall sentiment polarity (positive or negative). The set was released  in June 2004 and it contains 1000 positive and 1000 negative processed reviews.The reviews were preprocessed by the dataset editors so that each review iS formatted as a plain tokenized text, containing no structured information that can imply on the polarity of the text (e.g. stars rating – 0/5). The average review size  (in words) is 746.3. Although this set is considered as a userCgenerated content the language is relatively grammatically correct in most cases, probably because users are not restricted with the size of the 
+
 This dataset is taken from https://ai.stanford.edu/~amaas/data/sentiment/ and then preprocess to put all positive and negative reviews in the same file for training and testing. It helps in put more effort on algorithm instead of data collection.
 
 Content
