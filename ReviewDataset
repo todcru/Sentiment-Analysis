@@ -10,3 +10,17 @@ from sklearn.metrics import classification_report
 df.head()
 
 !pip install git+https://github.com/todcru/preprocess_dl.git
+
+import preprocess_dl as ps
+import re
+
+def get_clean(x):
+    x = str(x).lower().replace('\\', '').replace('_', ' ')
+    x = ps.cont_exp(x)
+    x = ps.remove_emails(x)
+    x = ps.remove_urls(x)
+    x = ps.remove_html_tags(x)
+    x = ps.remove_accented_chars(x)
+    x = ps.remove_special_chars(x)
+    x = re.sub("(.)\\1{2,}", "\\1", x)
+    return x
