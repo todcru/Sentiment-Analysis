@@ -1,3 +1,12 @@
 import pandas as pd
 import numpy as np
 
+!git clone https://github.com/todcru/Sentiment-Analysis
+df = pd.read_excel('Sentiment-Analysis/train.xlsx')
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.model_selection import train_test_split
+from sklearn.svm import LinearSVC
+from sklearn.metrics import classification_report
+df.head()
+
+!pip install git+https://github.com/todcru/preprocess_dl.git
