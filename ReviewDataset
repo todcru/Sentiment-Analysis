@@ -26,3 +26,5 @@ def get_clean(x):
     return x
 
 df['Reviews'] = df['Reviews'].apply(lambda x: get_clean(x))
+
+df.head()
