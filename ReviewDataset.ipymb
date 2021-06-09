@@ -43,3 +43,20 @@ clf = LinearSVC()
 clf.fit(X_train, y_train)
 
 y_pred = clf.predict(X_test)
+
+print(classification_report(y_test, y_pred))
+
+x = 'this movie is really good. thanks a lot for making it'
+
+x = get_clean(x)
+vec = tfidf.transform([x])
+
+vec.shape
+
+clf.predict(vec)
+
+clf.predict(vec)
+
+import pickle
+pickle.dump(clf, open('model', 'wb'))
+pickle.dump(tfidf, open('tfidf', 'wb'))
