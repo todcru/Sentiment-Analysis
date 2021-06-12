@@ -20,7 +20,6 @@ Viewing the notebooks online
 The content of the notebooks can be viewed online through colab.research.google.com/
 
 Installing Python
-
 For a true interactive use of the notebooks you need to install Python, IPython (for notebooks) and the required libraries scikit-learn, matplotlib and numpy.
 
 Windows
